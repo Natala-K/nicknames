@@ -3,7 +3,7 @@ import Validator from './validator';
 test('valid usernames', () => {
   expect(Validator.validateUsername('Valid_Username')).toBe(true);
   expect(Validator.validateUsername('Valid-Username')).toBe(true);
-  expect(Validator.validateUsername('ValidUsername123')).toBe(true);
+  expect(Validator.validateUsername('Valid123Username')).toBe(true);
 });
 
 test('invalid usernames', () => {
